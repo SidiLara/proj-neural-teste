@@ -1,0 +1,58 @@
+@import "./config/reset";
+@import "./config/variaveis.less";
+@import "./config/layout.less";
+
+.navbar {
+    background-color: @corPrincipal;
+
+    a {
+        color: @corTexto;
+        text-decoration: none;
+
+        &:hover {
+            color: @corTexto;
+        }
+    }
+}
+
+.carousel {
+
+    .car-1 {
+        height: 400px;
+        background-color: red;
+        margin: 0 auto;
+    }
+
+    .car-2 {
+        height: 400px;
+        background-color: blue;
+        margin: 0 auto;
+    }
+
+    .car-3 {
+        height: 400px;
+        background-color: green;
+        margin: 0 auto;
+    }
+}
+
+.carousel {
+    position: relative;
+    z-index: 1;
+}
+
+.options {
+    position: relative;
+    z-index: 2;
+    margin-top: -100px; /* Ajuste este valor conforme necessário */
+    padding: 20px;
+    .card{
+        transition: transform 0.3s ease; /* Suaviza a transição */
+        &:hover{
+            transform: scale(1.05); /* Aumenta o tamanho em 5% */
+        }
+    }
+    .card-body{
+        border: none;
+    }
+}
